@@ -1,0 +1,223 @@
+/* Global Styles */
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('4.jpg'); /* Full background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    animation: fadeIn 1s ease-in;
+    position: relative;
+}
+
+/* Dark Overlay for Readability */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+header {
+    display: flex;
+    flex-direction: column; /* Stack title and nav vertically */
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Align logo and title in the same line */
+    gap: 10px; /* Space between logo and title */
+    margin-top: 10px; /* Add top margin if needed */
+}
+
+.logo-icon {
+    width: 60px;
+    height: auto;
+    animation: slideIn 1.5s ease-out;
+}
+
+
+
+h1 {
+    margin: 0;
+    font-size: 40px; /* Adjust size as needed */
+}
+
+nav {
+    margin: 10px 0 0 0; /* Add gap above nav */
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    word-spacing: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Gallery Section */
+section {
+    padding: 50px 20px;
+}
+
+h2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    animation: slideIn 1.5s ease-out;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.gallery1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery1 img {
+    width: 100%;
+    border-radius: 8px;
+}
+.gallery2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery2 img {
+    width: 100%;
+    border-radius: 8px;
+}
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.contact-item h3, 
+.contact-item p, 
+footer p {
+    margin: 5px 0;
+}
+
+/* Button and Link Styles */
+.link {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+.link:nth-child(1) {
+    background-color: #1877F2;
+}
+
+.link:nth-child(1):hover {
+    background-color: #0e5a9c;
+}
+
+.link:nth-child(2) {
+    background-color: black;
+}
+
+.link:nth-child(2):hover {
+    background-color: gray;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+.hi {
+    animation: slideIn 1.5s ease-out;
+}
+.moving-element {
+    position: fixed;
+    top: 50%;
+    right: -100px; /* Start off-screen */
+    animation: moveAndVanish 5s linear infinite;
+}
+
+/* @keyframes moveAndVanish {
+    0% {
+        right: -100px;
+        opacity: 1;
+    }
+    80% {
+        right: 100%;
+        opacity: 1;
+    }
+    100% {
+        right: 100%;
+        opacity: 0;
+    }
+} */
