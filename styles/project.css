@@ -11,9 +11,10 @@ h1 {
     margin: 20px 0;
     justify-content: center;
     align-items: center;
-     display: flex;
-     animation: slideIn 0.5s ease-out;
-     font-size: 2rem;
+    display: flex;
+    animation: slideIn 0.5s ease-out;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.663);
     
     
 }
